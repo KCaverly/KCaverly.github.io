@@ -20,7 +20,7 @@ highlight_code = true
 
 [extra]
 username = "kcaverly"
-user_description = "Professionally, I build machines that trade. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity systems. I like linux, the terminal and building simple, effective and robust systems."
+user_description = "Professionally, I build machines that invest. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity systems. I like linux, the terminal and building simple, effective and robust systems."
 user_title = "Software Engineering and Research"
 email = "kylebcaverly@gmail.com"
 github_username =  "KCaverly"
