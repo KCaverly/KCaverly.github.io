@@ -1,0 +1,9 @@
+[submodule "themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/getzola/hyde.git
+[submodule "themes/ntun"]
+	path = themes/ntun
+	url = https://github.com/netoun/ntun.git
+[submodule "themes/particle-zola"]
+	path = themes/particle-zola
+	url = https://github.com/svavs/particle-zola.git
