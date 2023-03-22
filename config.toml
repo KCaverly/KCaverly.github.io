@@ -28,7 +28,7 @@ highlight_code = true
 
 [extra]
 username = "kcaverly"
-user_description = "Senior Software Engineer and Researcher, with experience in the Investments industry. I like linux, the terminal and building robust, simple and effective systems."
-user_title = "Kyle Caverly"
+user_description = "Senior Software Engineer and Researcher, with experience in the Investments industry. I like linux, the terminal and building simple, effective and robust systems."
+user_title = "Senior Software Engineer and Researcher"
 email = "kylebcaverly@gmail.com"
 github_username =  "KCaverly"

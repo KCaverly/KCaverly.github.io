@@ -12,7 +12,7 @@
       <i class="devicon-csharp-plain-wordmark colored"></i>
       <i class="devicon-lua-plain-wordmark colored"></i>
       <i class="devicon-typescript-plain colored"></i>
-      <p>While Python and Rust are my favourites, I have extensive experience in a wide variety of programming languages</p>
+      <p>While Python and Rust are my favourites, I have extensive experience in a wide variety of programming languages.</p>
     </div>
     <div class="tech">
       <h2>Data & ML</h2>
@@ -37,32 +37,67 @@
 {% macro projects() %}
 <div class="user-details">
   <h1> Featured Projects </h1>
-  <p>Professionally, I build machines that trade. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity. Here are a few select projects I've worked on lately. </p>
+  <p>Professionally, I build machines that trade. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity systems. Here are a few select projects I've worked on lately. </p>
 </div>
+<h2> Professional Projects</h2>
+<br>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/alphatext.png" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <h3>alphatext</h3>
+    <h4>How can we understand and identify thematic relevance for companies in our universe?</h4>
+    <!-- <ul> -->
+    <!--   <li> Featured Skills</li> -->
+    <!-- </ul> -->
+    <p>Built a semantic search pipeline for North American equity filings. Managing everything from parsing, data storage, embedding generation, query inference and vector search. Leveraged HuggingFace, Databricks, Milvus and Kubernetes. Resulting in sub-second response times for top-k searches on 65M vectors.</p>
+    <!-- <a class="project-link" target="_blank" href="https://github.com/KCaverly/peaches">Check it out</a> -->
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/mew.png" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <h3> mew </h3>
+    <h4> How can we systematically understand the narratives affecting the investments we are interested in?</h4>
+    <!-- <ul> -->
+    <!--   <li> Featured Skills</li> -->
+    <!-- </ul> -->
+    <p>Led development of a large scale NLP product, leveraging transformer models and Machine Readable News to identify and organize the way companies in our portfolio and investment universe are being discussed globally. Bespoke HuggingFace models were fine-tuned for Sentiment, Uncertainty, Novelty, Regression and Named Entity Recognition. Responsible for product direction and technical development of the modelling engine, data ingest pipeline, and API serving.</p>
+    <!-- <a class="project-link" href="#">Check it out</a> -->
+  </div>
+</div>
+<h2>Personal Projects</h2>
+<br>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/blang.png" }}" />
+  </div>
+  <div class="contents">
+    <h3> blang </h3>
+    <h4> Working on an interpreter and compiler in Rust</h4>
+    <!-- <ul> -->
+    <!--   <li> Featured Skills</li> -->
+    <!-- </ul> -->
+    <p>I am constantly trying to get a deeper understanding on whats going on underneath the hood. As such, I've been working through building an interpreter and compiler for a simple programming language in Rust. Leveraging 'Build an Interpreter in Go' and 'Crafting Interpreters'</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/blang">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img height=100 width=1000 alt="mountains" src="{{ config.base_url ~ "/img/peaches.png" }}" />
+  </div>
+  <div class="contents-right">
+    <br>
+    <h3> peaches </h3>
+    <h4>How can I reduce context switching and simplify my navigation experience while inside the terminal?</h4>
+    <!-- <ul> -->
+    <!--   <li> Featured Skills</li> -->
+    <!-- </ul> -->
+    <p>Leveraging Rust and wrapping TMUX, I built a universal smart switcher for the terminal. Provides quick switching and session management functionality for common Git directories, SSH Hosts, running Docker containers and Markdown notes.</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/peaches">Check it out</a>
   </div>
 </div>
 {% endmacro projects %}
