@@ -4,6 +4,3 @@
 [submodule "themes/ntun"]
 	path = themes/ntun
 	url = https://github.com/netoun/ntun.git
-[submodule "themes/particle-zola"]
-	path = themes/particle-zola
-	url = https://github.com/svavs/particle-zola.git
