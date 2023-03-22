@@ -1,15 +1,7 @@
 # Site settings
-description = "A blog about lorem ipsum dolor sit amet"
+description = "kcaverly - Home"
 
 # User settings
-username = "Lorem Ipsum"
-user_description = "Anon Developer at Lorem Ipsum Dolor"
-user_title = "Anon Developer"
-email = "my@email.com"
-twitter_username = "lorem_ipsum"
-github_username =  "lorem_ipsum"
-gplus_username =  "lorem_ipsum"
-
 # The URL the site will be built for
 base_url = "https://KCaverly.github.io"
 
@@ -29,6 +21,6 @@ highlight_code = true
 [extra]
 username = "kcaverly"
 user_description = "Professionally, I build machines that trade. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity systems. I like linux, the terminal and building simple, effective and robust systems."
-user_title = "Senior Software Engineer and Researcher"
+user_title = "Senior Analyst - Software Engineering and Research"
 email = "kylebcaverly@gmail.com"
 github_username =  "KCaverly"
