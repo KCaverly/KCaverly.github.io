@@ -1,0 +1,69 @@
+{% macro about() %}
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+ <div class="user-details">
+  <h1> My Expertise </h1>
+  <p> {{ config.extra.user_description }} </p>
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Code</h2>
+      <i class="devicon-python-plain colored"></i>
+      <i class="devicon-rust-plain colored"></i>
+      <i class="devicon-csharp-plain-wordmark colored"></i>
+      <i class="devicon-lua-plain-wordmark colored"></i>
+      <i class="devicon-typescript-plain colored"></i>
+      <p>While Python and Rust are my favourites, I have extensive experience in a wide variety of programming languages</p>
+    </div>
+    <div class="tech">
+      <h2>Data & ML</h2>
+      <i class="devicon-pytorch-plain-wordmark colored"></i>
+      <i class="devicon-postgresql-plain colored"></i>
+      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+      <i class="devicon-azure-plain colored"></i>
+      <i class="devicon-jupyter-plain-wordmark colored"></i>
+      <p>Experience building GPU accelerated production NLP workloads, using Pytorch, Cloud Compute and PostgreSQL.
+    </div>
+    <div class="tech">
+      <h2>Tools</h2>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-linux-plain colored"></i>
+      <i class="devicon-vim-plain colored"></i>
+      <i class="devicon-docker-plain-wordmark colored"></i>
+      <i class="devicon-bash-plain colored"></i>
+      <p>Terminal addict, with experience developing on Linux, working in containers and common developer tooling.</p>
+    </div>
+</div>
+{% endmacro about %}
+{% macro projects() %}
+<div class="user-details">
+  <h1> Featured Projects </h1>
+  <p>Professionally, I build machines that trade. I am currently responsible for Research and Analytic Systems development for a systematic investment team managing 15B. Personally, I love developer tooling, hacking on programming languages, and productivity. Here are a few select projects I've worked on lately. </p>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3> Project Title </h3>
+    <ul>
+      <li> Featured Skills</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Project Title </h3>
+    <ul>
+      <li> Featured Skills</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+{% endmacro projects %}
+
