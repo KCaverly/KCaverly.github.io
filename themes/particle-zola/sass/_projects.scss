@@ -1,7 +1,7 @@
 #projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
@@ -14,11 +14,14 @@
 }
 
 .user-projects {
-  margin: 20px auto;
+  margin: 10px auto;
   img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+  }
+  h3 {
+    margin-top: 0;
   }
   h5 {
     margin: 0;
@@ -36,29 +39,38 @@
   }
 }
 
+.row {
+  height: 375px;
+  margin-top: 0;
+}
+
 .contents {
   @media only screen and (min-width: $cut) {
-    margin-top: -5%;
-    margin-left: 0;
+    margin-left: 2;
+    margin-top: 0;
     width: 48%;
   }
+  min-height: 375px;
 }
 
 .contents-right {
   @media only screen and (min-width: $cut) {
     float: right;
-    margin-top: -5%;
+    margin-top: 0;
     width: 48%;
   }
+  min-height: 375px;
 }
 .images-right {
   @media only screen and (min-width: $cut) {
     float: right;
     width: 48%;
+    min-height: 375px;
   }
   img {
     @media only screen and (min-width: $cut) {
       float: right;
+      min-height: 375px;
     }
   }
 }
@@ -67,12 +79,13 @@
   @media only screen and (min-width: $cut) {
     float: left;
     width: 48%;
-    height: 100%;
+    min-height: 375px;
+
   }
   img {
     @media only screen and (min-width: $cut) {
       float: left;
-      height: 100%;
+      min-height: 375px;
     }
   }
 }
