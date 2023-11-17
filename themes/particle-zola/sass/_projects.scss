@@ -65,13 +65,12 @@
   @media only screen and (min-width: $cut) {
     float: right;
     width: 48%;
-    min-height: 375px;
   }
   img {
     @media only screen and (min-width: $cut) {
       float: right;
-      min-height: 375px;
     }
+    min-height: 375px;
   }
 }
 
@@ -79,14 +78,12 @@
   @media only screen and (min-width: $cut) {
     float: left;
     width: 48%;
-    min-height: 375px;
-
   }
   img {
     @media only screen and (min-width: $cut) {
       float: left;
-      min-height: 375px;
     }
+    min-height: 375px;
   }
 }
 
