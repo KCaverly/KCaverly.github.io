@@ -40,7 +40,7 @@
   <p>Here are a few select projects that I've worked on lately. </p>
 </div>
 <h2> Professional Projects</h2>
-<p>Professionally, my work bridges between language model research and systems development. Most recently, I've lead embedded ML systems projects at Zed, with prior experience in the Quantitative Finance world building systems which leverage non-traditional information to invest.</p>
+<p>Professionally, my work bridges between language model research and systems development. Most recently, I've lead ML application projects at Zed, with prior experience in the Quantitative Finance world building systems which leverage non-traditional information to invest.</p>
 <br>
 
 <div class="user-projects">
@@ -49,8 +49,8 @@
   </div>
   <div class="contents">
     <h3>Zed: semantic-index</h3>
-    <h4>A high performance embedded semantic retrieval engine for code intelligence.</h4>
-    <p>Lef the development of a bespoke embedded vector solution for Code Intelligence. Leveraged Rust, Treesitter, ONNX, along with Local and Third Party Embedding engines for object level code navigation and retrieval augmentated generation.</p>
+    <h4>A high performance in-application semantic retrieval engine for code intelligence.</h4>
+    <p>Lef the development of a bespoke vector solution for Code Intelligence. Leveraged Rust, Treesitter, ONNX, along with Local and Third Party Embedding engines for object level code navigation and retrieval augmented generation.</p>
     <a class="project-link" target="_blank" href="https://twitter.com/zeddotdev/status/1707130607195550067">Check it out</a>
   </div>
 </div>
@@ -81,13 +81,24 @@
 <p>In my free time, I love pushing my understanding of computers. Whether thats through hacking on low level language features, modding my existing OS, or optimizing my workflow. I treat Software Engineering like a craft, and spend my time pushing my skillset further.
 <br>
 <div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/llmit.png" }}" />
+  </div>
+  <div class="contents">
+    <h3> llmit </h3>
+    <h4>Interactive multi-turn LLM agents in the Terminal</h4>
+    <p>TUI for communicating with multi-turn LLM agents. Built with Replicate and Ratatui, it allows simple exploration of various Open Source LLMs, along with (hopefully) magic command based agent workflows surrounding directory exploration and Question Answering.</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/llmit">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
   <div class="images-left">
     <img alt="mountains" src="{{ config.base_url ~ "/img/auden.png" }}" />
   </div>
   <div class="contents-right">
     <h3> auden </h3>
     <h4>Yet another retrieval engine</h4>
-    <p>A standalone directory based retrieval engine written in Rust. A simple way to either embed directory based retrieval into another Rust application to manage on-device retrieval, or run as a binary and exposed via gRPC. Built with tokio, surrealdb, tonic, and llm chain.</p>
+    <p>A standalone directory based semantic retrieval engine written in Rust. A simple way to either embed directory based retrieval into another Rust application, or run as a binary and exposed via gRPC. Built with tokio, surrealdb, tonic, and llm chain.</p>
     <a class="project-link" target="_blank" href="https://github.com/KCaverly/auden">Check it out</a>
   </div>
 </div>
