@@ -1,0 +1,128 @@
+{% macro about() %}
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+ <div class="user-details">
+  <h1> My Expertise </h1>
+  <p> {{ config.extra.user_description }} </p>
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Code</h2>
+      <i class="devicon-python-plain colored"></i>
+      <i class="devicon-rust-plain colored"></i>
+      <i class="devicon-csharp-plain-wordmark colored"></i>
+      <i class="devicon-typescript-plain colored"></i>
+      <i class="devicon-go-plain colored"></i>
+      <p>Extensive experience in a wide variety of programming languages, with a particular passion for Python and Rust.</p>
+    </div>
+    <div class="tech">
+      <h2>Data & ML</h2>
+      <i class="devicon-pytorch-plain-wordmark colored"></i>
+      <i class="devicon-postgresql-plain colored"></i>
+      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+      <i class="devicon-azure-plain colored"></i>
+      <i class="devicon-jupyter-plain-wordmark colored"></i>
+      <p>Well-versed in building GPU-accelerated production ML products using PyTorch, Cloud Compute, and PostgreSQL.
+    </div>
+    <div class="tech">
+      <h2>Tools</h2>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-linux-plain colored"></i>
+      <i class="devicon-vim-plain colored"></i>
+      <i class="devicon-docker-plain-wordmark colored"></i>
+      <i class="devicon-bash-plain colored"></i>
+      <p>Terminal addict, with experience developing for Linux, Windows and Mac, working in containers, and common developer tooling.</p>
+    </div>
+</div>
+{% endmacro about %}
+{% macro projects() %}
+<div class="user-details">
+  <h1> Featured Projects </h1>
+  <p>Here are a few select projects that I've worked on lately. </p>
+</div>
+<h2> Professional Projects</h2>
+<p>Professionally, my work bridges between language model research and systems development. Most recently, I've lead ML application projects at Zed, with prior experience in the Quantitative Finance world building systems which leverage non-traditional information to invest.</p>
+<br>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/airport-3.png" }}" />
+  </div>
+  <div class="contents">
+    <h3>Zed: semantic-index</h3>
+    <h4>A high performance in-application semantic retrieval engine for code intelligence.</h4>
+    <p>Led the development of a bespoke vector solution for Code Intelligence. Leveraged Rust, Treesitter, ONNX, along with Local and Third Party Embedding engines for object level code navigation and retrieval augmented generation.</p>
+    <a class="project-link" target="_blank" href="https://twitter.com/zeddotdev/status/1707130607195550067">Check it out</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/cubicle-3.png" }}" />
+  </div>
+  <div class="contents-right">
+    <h3>OMERS: alphatext</h3>
+    <h4>A thematic relevancy and retrieval engine for North American equity filings.</h4>
+    <p>Built a semantic search pipeline for North American equity filings. Managing everything from parsing, data storage, embedding generation, query inference and vector search. Leveraged HuggingFace, Databricks, Milvus and Kubernetes. Resulting in sub-second response times for top-k searches on 65M vectors.</p>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/whiteboard-2.png" }}" />
+  </div>
+  <div class="contents">
+    <h3>OMERS: mew</h3>
+    <h4>A novelty and sentiment analysis engine for the global investment news.</h4>
+    <p>Led development of a large scale NLP product, leveraging transformer models and Machine Readable News to analyze global commentary on companies in our investment universe. Bespoke models were fine-tuned for Sentiment, Uncertainty, Novelty, Regression and Named Entity Recognition. Responsible for product direction and technical development of the modelling engine, data pipeline and API serving.</p>
+  </div>
+</div>
+
+<h2>Personal Projects</h2>
+<p>In my free time, I love pushing my understanding of computers. Whether thats through hacking on low level language features, modding my existing OS, or optimizing my workflow. I treat Software Engineering like a craft, and spend my time pushing my skillset further.
+<br>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/llmit.png" }}" />
+  </div>
+  <div class="contents">
+    <h3> llmit </h3>
+    <h4>Interactive multi-turn LLM agents in the Terminal</h4>
+    <p>TUI for communicating with multi-turn LLM agents. Built with Replicate and Ratatui, it allows simple exploration of various Open Source LLMs, along with (hopefully) magic command based agent workflows surrounding directory exploration and Question Answering.</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/llmit">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/auden.png" }}" />
+  </div>
+  <div class="contents-right">
+    <h3> auden </h3>
+    <h4>Yet another retrieval engine</h4>
+    <p>A standalone directory based semantic retrieval engine written in Rust. A simple way to either embed directory based retrieval into another Rust application, or run as a binary and exposed via gRPC. Built with tokio, surrealdb, tonic, and llm chain.</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/auden">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/blang.png" }}" />
+  </div>
+  <div class="contents">
+    <h3> blang </h3>
+    <h4> An interpreter for the Monkey Language written in Rust.</h4>
+    <p>I am constantly trying to get a deeper understanding on whats going on underneath the hood. As such, I've built an interpreter for a simple programming language in Rust. Leveraging 'Build an Interpreter in Go' and 'Crafting Interpreters'</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/blang">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/peaches.png" }}" />
+  </div>
+  <div class="contents-right">
+    <h3> peaches </h3>
+    <h4>A smart switcher for the terminal.</h4>
+    <p>Leveraging Rust and wrapping TMUX, I built a universal smart switcher for the terminal. Provides quick switching and session management functionality for common Git directories, SSH Hosts, running Docker containers and Markdown notes.</p>
+    <a class="project-link" target="_blank" href="https://github.com/KCaverly/peaches">Check it out</a>
+  </div>
+</div>
+{% endmacro projects %}
+
